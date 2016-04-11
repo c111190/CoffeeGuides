@@ -7,14 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F112204A1CAD183400C410FE /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11220491CAD183400C410FE /* Venue.swift */; };
+		F112204C1CAD440800C410FE /* CoffeeGuideAnnotation.swift .swift in Sources */ = {isa = PBXBuildFile; fileRef = F112204B1CAD440800C410FE /* CoffeeGuideAnnotation.swift .swift */; };
 		F1AABC151CAC03E3001A1E79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AABC141CAC03E3001A1E79 /* AppDelegate.swift */; };
 		F1AABC171CAC03E3001A1E79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AABC161CAC03E3001A1E79 /* ViewController.swift */; };
 		F1AABC1A1CAC03E3001A1E79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1AABC181CAC03E3001A1E79 /* Main.storyboard */; };
 		F1AABC1C1CAC03E3001A1E79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1AABC1B1CAC03E3001A1E79 /* Assets.xcassets */; };
 		F1AABC1F1CAC03E3001A1E79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1AABC1D1CAC03E3001A1E79 /* LaunchScreen.storyboard */; };
+		F1AABC271CAC04CE001A1E79 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = F1AABC261CAC04CE001A1E79 /* Podfile */; };
+		F1AABC291CACCFE8001A1E79 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1AABC281CACCFE8001A1E79 /* MapKit.framework */; };
+		F1AABC2B1CAD0BC8001A1E79 /* CoffeeGuideAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AABC2A1CAD0BC8001A1E79 /* CoffeeGuideAPI.swift */; };
+		F40A4ED3D35E3223DA7FDCDA /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5F0E10B968F6F7ADE11BB2 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		103742F565D20D5D82239B14 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		42587F7A68A0B68DFD386B9E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		AE5F0E10B968F6F7ADE11BB2 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F11220491CAD183400C410FE /* Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Venue.swift; path = CoffeeGuide/Venue.swift; sourceTree = "<group>"; };
+		F112204B1CAD440800C410FE /* CoffeeGuideAnnotation.swift .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CoffeeGuideAnnotation.swift .swift"; path = "CoffeeGuide/CoffeeGuideAnnotation.swift .swift"; sourceTree = "<group>"; };
 		F1AABC111CAC03E3001A1E79 /* CoffeeGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1AABC141CAC03E3001A1E79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1AABC161CAC03E3001A1E79 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +33,9 @@
 		F1AABC1B1CAC03E3001A1E79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1AABC1E1CAC03E3001A1E79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F1AABC201CAC03E3001A1E79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1AABC261CAC04CE001A1E79 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		F1AABC281CACCFE8001A1E79 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		F1AABC2A1CAD0BC8001A1E79 /* CoffeeGuideAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoffeeGuideAPI.swift; path = CoffeeGuide/CoffeeGuideAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +43,43 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1AABC291CACCFE8001A1E79 /* MapKit.framework in Frameworks */,
+				F40A4ED3D35E3223DA7FDCDA /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE701D841502B023CB15E984 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				42587F7A68A0B68DFD386B9E /* Pods.debug.xcconfig */,
+				103742F565D20D5D82239B14 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C5AED18A0BBFA97D9FFBA3D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1AABC281CACCFE8001A1E79 /* MapKit.framework */,
+				AE5F0E10B968F6F7ADE11BB2 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F1AABC081CAC03E3001A1E79 = {
 			isa = PBXGroup;
 			children = (
+				F112204B1CAD440800C410FE /* CoffeeGuideAnnotation.swift .swift */,
+				F11220491CAD183400C410FE /* Venue.swift */,
+				F1AABC2A1CAD0BC8001A1E79 /* CoffeeGuideAPI.swift */,
+				F1AABC261CAC04CE001A1E79 /* Podfile */,
 				F1AABC131CAC03E3001A1E79 /* CoffeeGuide */,
 				F1AABC121CAC03E3001A1E79 /* Products */,
+				AE701D841502B023CB15E984 /* Pods */,
+				C5AED18A0BBFA97D9FFBA3D7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +111,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F1AABC231CAC03E3001A1E79 /* Build configuration list for PBXNativeTarget "CoffeeGuide" */;
 			buildPhases = (
+				5C409CC5EBC6FC3A77A2E906 /* Check Pods Manifest.lock */,
 				F1AABC0D1CAC03E3001A1E79 /* Sources */,
 				F1AABC0E1CAC03E3001A1E79 /* Frameworks */,
 				F1AABC0F1CAC03E3001A1E79 /* Resources */,
+				06EFDE5C3B3478B06E5D7A45 /* Embed Pods Frameworks */,
+				BBA533E2D3D019E97E9B16CB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,11 +168,60 @@
 			files = (
 				F1AABC1F1CAC03E3001A1E79 /* LaunchScreen.storyboard in Resources */,
 				F1AABC1C1CAC03E3001A1E79 /* Assets.xcassets in Resources */,
+				F1AABC271CAC04CE001A1E79 /* Podfile in Resources */,
 				F1AABC1A1CAC03E3001A1E79 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06EFDE5C3B3478B06E5D7A45 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C409CC5EBC6FC3A77A2E906 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BBA533E2D3D019E97E9B16CB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F1AABC0D1CAC03E3001A1E79 /* Sources */ = {
@@ -137,7 +229,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1AABC171CAC03E3001A1E79 /* ViewController.swift in Sources */,
+				F112204C1CAD440800C410FE /* CoffeeGuideAnnotation.swift .swift in Sources */,
+				F112204A1CAD183400C410FE /* Venue.swift in Sources */,
 				F1AABC151CAC03E3001A1E79 /* AppDelegate.swift in Sources */,
+				F1AABC2B1CAD0BC8001A1E79 /* CoffeeGuideAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +345,7 @@
 		};
 		F1AABC241CAC03E3001A1E79 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42587F7A68A0B68DFD386B9E /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CoffeeGuide/Info.plist;
@@ -261,6 +357,7 @@
 		};
 		F1AABC251CAC03E3001A1E79 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 103742F565D20D5D82239B14 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CoffeeGuide/Info.plist;
@@ -289,6 +386,7 @@
 				F1AABC251CAC03E3001A1E79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

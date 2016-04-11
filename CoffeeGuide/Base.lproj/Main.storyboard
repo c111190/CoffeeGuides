@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoffeeGuide" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,67 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YT8-dD-MKS">
+                                <rect key="frame" x="0.0" y="300" width="600" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="600" id="9aC-6d-eGc"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="318" id="KNS-JZ-DtQ"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="600" id="KfR-pu-u5r"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="600" id="WHS-aT-V1b"/>
+                                    <constraint firstAttribute="height" constant="318" id="WY2-wQ-hEq"/>
+                                    <constraint firstAttribute="width" constant="600" id="WYL-1n-on4"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="600" id="XA1-7K-eaa"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="318" id="XpO-VA-c0I"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="600" id="f1T-iu-Oe7"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="318" id="l92-Bp-PwO"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="600" id="rOo-GY-I16"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="WY2-wQ-hEq"/>
+                                        <exclude reference="XpO-VA-c0I"/>
+                                    </mask>
+                                </variation>
+                            </tableView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="1Q4-0V-QST">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="281" id="3li-MF-CVg"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="281" id="Ebr-h2-XhM"/>
+                                    <constraint firstAttribute="height" constant="281" id="wLO-D3-GzK"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="281" id="xJb-7x-guL"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Ebr-h2-XhM"/>
+                                        <exclude reference="wLO-D3-GzK"/>
+                                        <exclude reference="xJb-7x-guL"/>
+                                    </mask>
+                                </variation>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1Q4-0V-QST" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1eu-9s-YN9"/>
+                            <constraint firstItem="YT8-dD-MKS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8CB-8G-gan"/>
+                            <constraint firstItem="1Q4-0V-QST" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Kj9-7z-r4k"/>
+                            <constraint firstAttribute="trailing" secondItem="YT8-dD-MKS" secondAttribute="trailing" id="LGB-Pd-L66"/>
+                            <constraint firstAttribute="trailing" secondItem="1Q4-0V-QST" secondAttribute="trailing" id="QaW-xn-qEh"/>
+                            <constraint firstItem="YT8-dD-MKS" firstAttribute="height" secondItem="1Q4-0V-QST" secondAttribute="height" id="b2q-dG-C5E"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YT8-dD-MKS" secondAttribute="bottom" id="e9k-BL-L7Z"/>
+                            <constraint firstItem="YT8-dD-MKS" firstAttribute="top" secondItem="1Q4-0V-QST" secondAttribute="bottom" id="qmU-kW-8EE"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="MapView" destination="1Q4-0V-QST" id="Cna-cy-3zW"/>
+                        <outlet property="tableView" destination="YT8-dD-MKS" id="yeJ-Ff-6vX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="273" y="323"/>
         </scene>
     </scenes>
 </document>
